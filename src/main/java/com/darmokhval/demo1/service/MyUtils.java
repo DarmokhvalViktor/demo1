@@ -1,12 +1,11 @@
 package com.darmokhval.demo1.service;
 
 import com.darmokhval.demo1.entity.UserAccount;
+import jakarta.servlet.ServletRequest;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-
-import javax.servlet.ServletRequest;
 import java.sql.Connection;
 
 public class MyUtils {
