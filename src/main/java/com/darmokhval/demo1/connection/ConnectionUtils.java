@@ -8,6 +8,9 @@ public class ConnectionUtils {
         return MySQLConnector.getMySQLConnection();
     }
     public static void close(Connection connection) {
+        if(connection == null) {
+            return;
+        }
         try {
             connection.close();
         } catch (SQLException e) {
@@ -15,6 +18,9 @@ public class ConnectionUtils {
         }
     }
     public static void rollback(Connection connection) {
+        if(connection == null) {
+            return;
+        }
         try {
             connection.rollback();
         } catch(SQLException e) {
