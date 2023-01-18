@@ -9,7 +9,10 @@ public class MySQLConnector {
         String hostName = "localhost";
         String databaseName = "demodb";
         String userName = "root";
-        String password = "root1212";
+//        notebookPass:
+//        String password = "root1212";
+//        PC password:
+        String password = "Viktor1995Revocation";
         return getMySQLConnection(hostName, databaseName, userName, password);
     }
     public static Connection getMySQLConnection(String hostName,
